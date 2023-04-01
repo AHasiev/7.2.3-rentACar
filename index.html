@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin-top: 20px;
+      }
+      .btn {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Арендовать авто</h1>
+    <div>
+      <form method="get">
+        <label>
+          <span>*Выбирите авто</span><br />
+          <select name="brand" multiple>
+            <optgroup label="Ferrari">
+              <option value="ferrariPortofino">
+                Ferrari Portofino - от 2000 до 2700 AED
+              </option>
+              <option value="ferrariRoma">
+                Ferrari Roma - от 2300 до 3850 AED
+              </option>
+            </optgroup>
+            <optgroup label="Lamborghini">
+              <option value="lamborghiniAventador">
+                Lamborghini Aventador - от 2300 до 2800 AED
+              </option>
+              <option value="lamborghiniHuracan">
+                Lamborghini Huracan - от 2100 до 2500 AED
+              </option>
+            </optgroup>
+          </select>
+        </label>
+      </form>
+    </div>
+    <div>
+      <span>*Дата аренды</span><br />
+      <form method="get">
+        <label>
+          <input type="date" />
+        </label>
+      </form>
+    </div>
+    <div>
+      <form method="get">
+        <span>*Ваше имя</span><br />
+        <input type="text" />
+      </form>
+    </div>
+    <div>
+      <form method="get">
+        <span>*Ваш номер телефона</span><br />
+        <input type="tel" name="phone" />
+      </form>
+    </div>
+    <div>
+      <form method="get">
+        <span>*Выбирите город</span><br />
+        <label>
+          <input type="radio" name="car1" value="dubai" checked />
+          <span>Дубай</span>
+        </label>
+        <label>
+          <input type="radio" name="car2" value="abu-dabi" />
+          <span>Абу-Даби</span>
+        </label>
+        <label>
+          <input type="radio" name="car3" value="alFujairah" />
+          <span>Эль-Фуджайра</span>
+        </label>
+      </form>
+      <div>
+        <form method="get">
+          <label>
+            <input type="checkbox" name="agreement" value="true" />
+            <span
+              >Отправляя заявку я соглашаюсь на обработку персональных
+              данных</span
+            >
+            <br />
+            <input type="submit" value="Оставить заявку" class="btn" />
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
